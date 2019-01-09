@@ -87,3 +87,32 @@ body {
   }
 
 }
+
+// 1260px over
+@media (min-width: 1260px) {
+  .page {
+    grid-template-columns: 260px 1fr;
+
+    .page-main {
+      grid-column: 2;
+      grid-row: 1 / -1;
+      background-color: #eee;
+    }
+    .page-head {
+      padding: 40px 0;
+      img {
+        width: 150px;
+      }
+    }
+    .page-nav {
+      display: block;
+      background-color: #222;
+    }
+    .page-btn {
+      display: none;
+    }
+    .page-foot {
+      padding: 40px 0;
+    }
+  }
+}
