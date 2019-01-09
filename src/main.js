@@ -8,15 +8,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const pageNav = document.querySelector('.page-nav')
 
   openBtn.addEventListener('click', () => {
-    console.log('-- open btn --')
-    pageNav.classList.add('open')
-    openBtn.classList.add('on')
-    closeBtn.classList.add('on')
+    console.log('btn click');
+    pageNav.classList.toggle('open')
+    openBtn.classList.toggle('on')
+    closeBtn.classList.toggle('on')
   })
-  closeBtn.addEventListener('click', () => {
-    console.log('-- close btn --');
-    pageNav.classList.remove('open')
-    openBtn.classList.remove('on')
-    closeBtn.classList.remove('on')
-  })
+
+  // openBtn.addEventListener('click', () => {
+  //   console.log('-- open btn --')
+  //   pageNav.classList.add('open')
+  //   openBtn.classList.add('on')
+  //   closeBtn.classList.add('on')
+  // })
+  // closeBtn.addEventListener('click', () => {
+  //   console.log('-- close btn --');
+  //   pageNav.classList.remove('open')
+  //   openBtn.classList.remove('on')
+  //   closeBtn.classList.remove('on')
+  // })
+
 })

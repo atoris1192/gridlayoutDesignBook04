@@ -73,10 +73,7 @@ body {
     display: block;
   }
   .page-btn.on {
-    display: none;
-  }
-  .page-btn{
-    display: block;
+    opacity: 0;
   }
 
   .page-foot {
