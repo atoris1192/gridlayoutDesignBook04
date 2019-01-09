@@ -1,0 +1,24 @@
+extends _layout
+block content
+  header.page-head
+    a(href="#")
+      img(src="img/sitelogo.svg", alt="TOP POINT")
+
+  main.page-main
+
+  nav.page-nav
+    ul
+      li: a(href="#") トップ
+      li: a(href="#") 最新記事
+      li: a(href="#") お食事シリーズ
+      li: a(href="#") お出かけシリーズ
+      li: a(href="#") お問い合わせ
+
+  button(type="button").page-btn
+    span.fas.fa-bars(title="メニューを開く")
+  
+  button(type="button").page-btn-close
+    span.fas.fa-times(title="メニューを閉じる")
+
+  footer.page-foot
+    p © TOP POINT
